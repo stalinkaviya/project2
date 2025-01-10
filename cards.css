@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.card-section{
+    width: 100%;
+    height: 700px;
+    background:black;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.card-section h1{
+    font-size: 600%;
+    font-family:fantasy;
+    text-align: center;
+    background:  rgba(9,121,101,1) 35%;
+    padding: 25px 0px;
+}
+.container {
+    width: 3000px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,101,1) 35%, rgba(0,212,255,1) 100%);
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+
+}
+.card-items{
+    width: 150%;
+    justify-content: center;
+    flex-basis: 23%;
+    margin: 10px 0px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 0px;
+    background:  rgb(249, 247, 247);
+    box-shadow: 0px 0px 10px 3px rgb(77, 73, 73);
+}
+.card-items h3{
+    padding: 10px 0px;
+}
+.card-items p{
+    font-size: 14px;
+    padding: 10px;
+}
+.card-items button {
+    background: blue;
+    padding: 10px 25px;
+    border: none;
+    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,101,1) 35%, rgba(0,212,255,1) 100%);
+ 
+    margin: 10px 0px;
+    border-radius: 40px;
+}
+.card-items:hover{
+    background:rgb(62, 102, 109);
+}
+.card-items:hover h3, .card-items:hover p{
+    color:white;
+}
+.card-items:hover button{
+    background: white;
+    color:blue;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .card-items{
+        margin:10px;
+    }
+}
